@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:id="mainPane" prefHeight="150.0" prefWidth="260.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <Label fx:id="statusLabel" wrapText="true" prefWidth="240.0" text="Upload">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="180.0" right="100.0" top="20.0"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <ProgressBar fx:id="progressBar" progress="0.0"  prefWidth="240.0" prefHeight="20.0">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </BorderPane.margin>
+        </ProgressBar>
+    </center>
+
+    <bottom>
+        <Button fx:id="uploadButton" onAction="#handleButtonAction" prefWidth="280.0" prefHeight="20.0" text="Choose file to upload"  style="-fx-background-color: red">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="100.0" right="100.0" top="20.0"/>
+            </BorderPane.margin>
+        </Button>
+    </bottom>
+
+</BorderPane>
